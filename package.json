@@ -1,0 +1,17 @@
+{
+  "name": "solid-simple-examples",
+  "private": true,
+  "type": "module",
+  "description": "Simple everyday TypeScript examples for learning SOLID principles",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node main.ts",
+    "srp": "node examples/01-srp.ts",
+    "ocp": "node examples/02-ocp.ts",
+    "lsp": "node examples/03-lsp.ts",
+    "isp": "node examples/04-isp.ts",
+    "dip": "node examples/05-dip.ts"
+  }
+}
