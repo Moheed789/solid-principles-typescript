@@ -23,6 +23,12 @@ class Dog extends Animal {
   }
 }
 
+class Cow extends Animal {
+  sound(): string {
+    return "Moo";
+  }
+}
+
 function makeSound(animal: Animal): void {
   console.log(animal.sound());
 }
@@ -31,6 +37,7 @@ console.log("\n3. LSP - Animal sounds");
 makeSound(new Animal());
 makeSound(new Cat());
 makeSound(new Dog());
+makeSound(new Cow());
 
 // Where? Passing Cat or Dog instead of Animal still gives us a sound.
 // Why? Each child keeps the parent's promise, so the caller needs no special fix.

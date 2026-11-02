@@ -37,9 +37,24 @@ class Circle implements Shape {
   }
 }
 
+class Triangle implements Shape {
+  base: number;
+  height: number;
+
+  constructor(base: number, height: number) {
+    this.base = base;
+    this.height = height;
+  }
+
+  area(): number {
+    return (this.base * this.height) / 2;
+  }
+}
+
 console.log("\n2. OCP - Shape areas");
 printArea(new Square(4));
 printArea(new Circle(1));
+printArea(new Triangle(3, 4));
 
 // Where? printArea() uses the Shape interface.
 // Why? A new shape does not need a new if/else inside this function.

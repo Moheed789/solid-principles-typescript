@@ -1,4 +1,4 @@
-# SOLID Principles - My Learning Notes
+# SOLID Principles
 
 I made this project to learn SOLID with easy examples. Each file explains one idea.
 

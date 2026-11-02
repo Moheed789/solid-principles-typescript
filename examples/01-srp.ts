@@ -6,7 +6,7 @@
 
 class ResultCalculator {
   getResult(marks: number): string {
-    return marks >= 50 ? "Pass" : "Fail";
+    return marks <= 50 ? "Pass" : "Fail";
   }
 }
 
